@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- auto compiled css and js library files-->
+	<script type="text/javascript"
+			src="//code.jquery.com/jquery-1.9.1.js">
+</script>
+
+	<link rel="stylesheet"type="text/css"href="/css/result-light.css">
+	<script type="text/javascript"src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+  <script type="text/javascript">
+		<!-- JavaScript to slide images horizontally-->
+		$(window).load(function() {
+			$(".carousel .item").each(function() {
+				var i = $(this).next();
+				i.length || (i = $(this).siblings(":first")),
+				i.children(":first-child").clone().appendTo($(this));
+				
+				for (var n = 0; n < 4; n++)(i = i.next()).length ||
+				(i = $(this).siblings(":first")),
+				i.children(":first-child").clone().appendTo($(this))
+			})
+		});
+	</script>
+
+</head>
+
+<body>
+	<!--container class-->
+	<div class="container">
+		<!-- myCarousel as row 1 in bootstrap card named container-->
+		<div class="carousel slide" id="myCarousel">
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="col-xs-2">
+						<a href="#">
+						  <img src="./photoes/JMS.png"class="img-responsive">
+					  </a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-xs-2">
+						<a href="#">
+						<img src="./photoes/Garbage_Collector.png" class="img-responsive">
+					</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-xs-2">
+						<a href="#">
+						<img src="./photoes/my_portfolio.png"class="img-responsive">
+					</a>
+					</div>
+				</div>
+			</div>
+			<!-- row 1 of bootstrap card control-->
+			<a class="left carousel-control"
+			href="#myCarousel"
+			data-slide="prev">
+				
+			<i class="glyphicon glyphicon-chevron-left">
+			</i>
+		</a>
+			<a class="right carousel-control" href="#myCarousel"
+			data-slide="next">
+			<i class="glyphicon glyphicon-chevron-right">
+			</i>
+		</a>
+
+		</div>
+		<!-- myCarousel as row 2 of
+			bootstrap card named container-->
+		<div class="carousel slide" id="myCarousel2">
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="col-xs-2">
+						<a href="#">
+						<img src="./photoes/language_photo/htnl_css.jpg"
+							class="img-responsive">
+					</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-xs-2">
+						<a href="#">
+						<img src="./photoes/language_photo/js.jpg" class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-xs-2">
+						<a href="#">
+						<img src="./photoes/language_photo/mysql.jpeg" class="img-responsive">
+					</a>
+					</div>
+				</div>
+			</div>
+			<!-- myCarousel2, control of row
+				2 of container class bootstrap card-->
+			<a class="left carousel-control"
+			href="#myCarousel2"
+			data-slide="prev">
+			<i class="glyphicon glyphicon-chevron-left">
+			</i>
+		</a>
+			<a class="right carousel-control"
+			href="#myCarousel2"
+			data-slide="next">
+			<i class="glyphicon glyphicon-chevron-right">
+			</i>
+		</a>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

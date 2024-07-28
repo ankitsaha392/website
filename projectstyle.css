@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+nav{
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+    border-radius: 30px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.logo:hover,
+.h1sp h1:hover,
+.fontend p:hover
+{
+    color: #7f00ff;
+}
+b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navItem{
+    display: flex;
+}
+.navItem li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItem li a{ 
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.open{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItem li:hover a{
+    color: #3d535f;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    border-radius: 30px;
+    padding: 7px 15px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+    font-weight: 800;
+}
+
+.links a:hover,
+span:hover, 
+h1:hover{
+    color: #7f00ff;
+}
+
+nav .logo img{
+    width: 4rem;
+    height: 4rem;
+    margin: 7px 10px;
+    border-radius: 50%;
+}
+
+.links a{
+    color: #3d535f;
+    padding-top: 20px;
+}
+.links{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.links a img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 5px;
+}
+
+
+P{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    color: #3d535f;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 7px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 450;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 6px 10px;
+    margin: 2% 5px 0;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+    background-color: #7f00ff;
+
+}
+
+/********Main projects**********/
+  
+  .cards {
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 32px;
+  }
+  
+  .card {
+    margin: 40px;
+    position: relative;
+    max-width: 450px;
+    max-height: 250px;
+    border-radius: 32px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-title {
+    display: block;
+    text-align: center;
+    color: #3d535f;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 32px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  
+  .card-desc {
+    font-size: 1.2rem;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: #fff;
+    overflow-y: scroll;
+    transition: 0.8s ease;
+    border-radius: 32px;
+    font-weight: 500;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+  }
+  span{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3d535f;
+    background-color: transparent;
+  }
+  
+  .card:hover .card-desc {
+    opacity: 1;
+    height: 103%;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    color: #3d535f;
+    margin: 40px 0 20px 0;
+    text-align: center;
+  }
+  footer{
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width:540px){
+     h1{
+        font-size: 2rem;
+     }
+  }
+  @media screen and (max-width:394px){
+    h1{
+       font-size: 1.5rem;
+    }
+ }

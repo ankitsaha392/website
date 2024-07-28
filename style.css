@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+nav{
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+    line-height: 80px;
+    border-radius: 30px;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    cursor: pointer;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.logo:hover,
+.h1sp h1:hover,
+.fontend p:hover,
+.backend p:hover
+{
+    color: #7f00ff;
+}
+b{
+    font-size: 70px;
+    color: #7f00ff;
+}
+.navItem{
+    display: flex;
+}
+.navItem li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItem li a,
+.skbtn a{ 
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.navItem li:hover a{
+    color: #3d535f;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    border-radius: 30px;
+    padding: 7px 15px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+    font-weight: 800;
+}
+
+.links a:hover{
+    color: #7f00ff;
+}
+
+nav .logo img{
+    width: 4rem;
+    height: 4rem;
+    margin: 7px 10px;
+    border-radius: 50%;
+}
+
+.links a{
+    color: #3d535f;
+    padding-top: 20px;
+}
+.links{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.links a img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 5px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #555;
+    border-radius: 50%;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #7f00ff;
+  }
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh -80px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2rem;
+}/*
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 70%;
+    width: 39%;
+    border-radius: 50%;
+    left: -12%;
+    bottom: 1%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+   
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: calc(100vh  -70px);
+    width: 40%;
+    border-radius: 50%;
+    left: 35%;
+    top: 15%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+} 
+*/
+.cols{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cols0{
+    height: 50%;
+    width: 50%;
+    margin-top: 50px;
+    z-index: 5;
+    padding: 0 20px;
+    margin: 10px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+.cols1{
+    position: relative;
+    top: 1.5REM;
+    height: 40rem;
+    width: 50%;
+    object-fit: cover;
+    background: #fff;
+    background-color: #fff;
+    box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+    padding-bottom: 10px;
+}
+.topline::after{
+    position: absolute;
+    content:'';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+.multiText{
+    color: #7f00ff;
+    font-weight: 400px;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+.cols0 h1{
+    padding: 15px 15px 15px 0;
+}
+
+
+P{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    color: #3d535f;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 7px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+    background-color: #7f00ff;
+
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imgbox img{
+    height: 100%;
+    width: 83%;
+    object-fit: cover;
+}
+
+.footer{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+.langu{
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 2%;
+    left: 12%;
+}
+.langu img{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.footer{
+    bottom: -10px;
+    left: 18%;
+}
+
+/******************************************For Skills.html Page*****************************************/
+/*Nav as same as previous*/
+
+.container2{
+    height: 100vh;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.h1sp{
+    text-align: center;
+    cursor: pointer;
+}
+
+.container21{
+    position: relative;
+    top: -30px;
+    left: 150px;
+    background-color: rgb(222, 219, 219);
+    width: 80%;
+    height: 1.6rem;
+    border-radius: 30px;
+}
+
+.container2{
+    margin: 0 2.5%;
+}
+
+.fontend{
+    position: relative;
+    top: 50px;
+    height: 30vh;
+    width: 95%;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    
+}
+ .fontend h1,
+ .backend h1,
+ .core h1{
+    color: #3d535f;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 5px 20px;
+    margin: 1rem 20px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+
+}
+.font-skillcore{
+    height: 13rem;
+}
+
+.skills{
+    height: 1.5rem;
+    border-radius: 30px;
+}
+.HTML{
+    width: 85%;
+    background-color: #34568B;
+}
+.CSS{
+    width: 75%;
+    background-color: #5a2a4e;
+}
+.JS{
+    width: 40%;
+    background-color: #955251;
+}
+.BS{
+    width: 90%;
+    background-color: #009B77;
+}
+.PHP{
+    width: 40%;
+    background-color: #DD4124;
+}
+.sql{
+    width: 80%;
+    background-color: #55B4B0;
+}
+.java{
+    width: 80%;
+    background-color: #9966ff;
+}
+.C{
+    width: 50%;
+    background-color: #55B4B0;
+}
+.eng{
+    width: 70%;
+    background-color: #E15D44;
+}
+.beng{
+    width: 90%;
+    background-color: #5B5EA6;
+}
+.hindi{
+    width: 90%;
+    background-color: #BC243C;
+}
+.fontend p,
+.backend p,
+.core p{
+    color: #3d535f;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+.backend{
+    position: relative;
+    top: 100px;
+    height: 30vh;
+    width: 95%;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+.corei{
+    position: relative;
+    top: 150px;
+}
+.core{
+    position: relative;
+    height: 23vh;
+    width: 95%;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+.mainpage{
+    height: 20vh;
+    text-align: center;
+}
+.skbtn{
+    position: absolute;
+    bottom: -25px;
+    right: 8px;
+}
+
+/********For Image Slider*********/
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 45vh;
+    width: 80%;
+    border-radius: 32px;
+  }
+  .mySlides1, .mySlides2, .mySlides3 {
+    display: none
+}
+  .mySlides1 img,
+  .mySlides2 img,
+  .mySlides3 img{
+    height: 50vh;
+    width: 100%;
+    border-radius: 32px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #7f00ff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #3d535f;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #3d535f;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  /* The dots/bullets/indicators */
+  .dot1, 
+  .dot2, 
+  .dot3 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot1:hover, .dot2:hover, .dot3:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .body {
+    --color: rgba(30, 30, 30);
+    --bgColor: #fff;
+    min-height: 40vh;
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--color);
+    background: var(--bgColor);
+    border-radius: 32px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    margin: 5%;
+  }
+  .body h1 {
+    text-align: center;
+  }
+  .body h1:hover{
+    color: #7f00ff;
+  }
+
+  /******for Contact Page***************/
+  
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 32px;
+    margin-bottom: 2%;
+    color: #3d535f;
+    height: 100%;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #3d535f;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    border: 2px solid #7f00ff;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-input:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-input::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .contact-input{
+        width: 80vw;
+    }
+    
+}
+
+
+  
+  footer{
+    text-align: center;
+  }
+
+
+
